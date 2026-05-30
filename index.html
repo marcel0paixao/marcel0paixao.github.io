@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marcelo da Paixão | Full-stack Developer</title>
+    <meta
+      name="description"
+      content="Full-stack developer in São Paulo building AI workflow systems, APIs, web apps, and product-minded software."
+    />
+    <meta name="theme-color" content="#14120f" />
+    <meta property="og:title" content="Marcelo da Paixão | Full-stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio focused on FlowPilot AI, full-stack engineering, APIs, AI orchestration, and selected production-style projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marcel0paixao.github.io/" />
+    <meta
+      property="og:image"
+      content="https://marcel0paixao.github.io/assets/flowpilot/demo-workflow-builder.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Primary">
+        <a class="brand" href="#intro" aria-label="Marcelo da Paixão">
+          <span class="brand-mark" aria-hidden="true">MP</span>
+          <span>Marcelo da Paixão</span>
+        </a>
+
+        <div class="nav-links" aria-label="Sections">
+          <a href="#case" data-i18n="navCase">Case</a>
+          <a href="#work" data-i18n="navWork">Work</a>
+          <a href="#stack" data-i18n="navStack">Stack</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </div>
+
+        <div class="language-switch" aria-label="Language">
+          <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="pt" aria-pressed="false">PT</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-band" id="intro" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="assets/flowpilot/demo-workflow-builder.png"
+          alt="FlowPilot AI workflow builder interface"
+          data-i18n-alt="heroImageAlt"
+        />
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="section-inner hero-inner">
+          <p class="eyebrow hero-eyebrow" data-i18n="heroEyebrow">
+            Full-stack developer · AI systems · São Paulo
+          </p>
+          <h1 id="hero-title">Marcelo da Paixão</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            I build full-stack products with the backend discipline to keep them reliable and the
+            product sense to make them useful. My current main case is FlowPilot AI: workflow
+            automation with real LLM execution, queues, credentials, and observability.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#case" data-i18n="heroPrimary">See FlowPilot case</a>
+            <a class="button button-ghost" href="https://github.com/marcel0paixao" data-i18n="heroSecondary">
+              View GitHub
+            </a>
+          </div>
+          <dl class="hero-proof" aria-label="Portfolio highlights">
+            <div>
+              <dt data-i18n="proofMainLabel">Main case</dt>
+              <dd>FlowPilot AI</dd>
+            </div>
+            <div>
+              <dt data-i18n="proofProjectsLabel">Selected projects</dt>
+              <dd>7</dd>
+            </div>
+            <div>
+              <dt data-i18n="proofFocusLabel">Focus</dt>
+              <dd data-i18n="proofFocusValue">Backend, AI, product UI</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section-band intro-strip" aria-label="Short positioning">
+        <div class="section-inner strip-grid">
+          <p data-i18n="stripOne">
+            Available for freelance builds, backend/API work, AI prototypes, and full-stack product
+            roles.
+          </p>
+          <p data-i18n="stripTwo">
+            Recent work combines TypeScript, Python, PHP/Laravel, PostgreSQL, RabbitMQ, Redis,
+            Docker, React, Angular, and product-facing dashboards.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-band case-section" id="case" aria-labelledby="case-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="caseEyebrow">Featured case</p>
+            <h2 id="case-title" data-i18n="caseTitle">FlowPilot AI</h2>
+            <p data-i18n="caseLead">
+              A multi-tenant workflow automation platform with asynchronous execution, a Python AI
+              orchestrator, encrypted workspace credentials, and observability for LLM calls.
+            </p>
+          </div>
+
+          <div class="case-layout">
+            <div class="case-copy">
+              <p data-i18n="caseHuman">
+                I built FlowPilot AI to show how I think about applied AI in software: as one step
+                inside a working system, with failures, secrets, cost, latency, and traceability to
+                handle. It is not a chatbot demo. It is a product-shaped architecture exercise.
+              </p>
+
+              <div class="case-points" aria-label="FlowPilot capabilities">
+                <article>
+                  <h3 data-i18n="casePointOneTitle">Workflow execution</h3>
+                  <p data-i18n="casePointOneText">
+                    Visual builder, workflow versions, manual trigger, transform, condition, HTTP,
+                    and AI prompt nodes.
+                  </p>
+                </article>
+                <article>
+                  <h3 data-i18n="casePointTwoTitle">Operational backbone</h3>
+                  <p data-i18n="casePointTwoText">
+                    RabbitMQ worker execution with retries, dead-letter handling, idempotency, and
+                    lifecycle events.
+                  </p>
+                </article>
+                <article>
+                  <h3 data-i18n="casePointThreeTitle">AI with visibility</h3>
+                  <p data-i18n="casePointThreeText">
+                    OpenRouter-backed prompt node through FastAPI, with traces for provider, model,
+                    tokens, status, latency, and estimated cost.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <figure class="case-visual">
+              <img
+                src="assets/flowpilot/flowpilot-linkedin-demo.gif"
+                alt="Animated FlowPilot AI workflow walkthrough"
+                data-i18n-alt="caseGifAlt"
+              />
+              <figcaption data-i18n="caseCaption">
+                Demo: incident triage workflow from intake to model response and trace data.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="metric-grid" aria-label="FlowPilot demo metrics">
+            <article class="metric">
+              <span data-i18n="metricStatusLabel">Execution</span>
+              <strong>SUCCEEDED</strong>
+            </article>
+            <article class="metric">
+              <span data-i18n="metricNodesLabel">Nodes</span>
+              <strong>6/6</strong>
+            </article>
+            <article class="metric">
+              <span data-i18n="metricTokensLabel">Tokens</span>
+              <strong>843</strong>
+            </article>
+            <article class="metric">
+              <span data-i18n="metricLatencyLabel">Provider latency</span>
+              <strong>27.4s</strong>
+            </article>
+            <article class="metric">
+              <span data-i18n="metricEventsLabel">Timeline events</span>
+              <strong>14</strong>
+            </article>
+          </div>
+
+          <div class="gallery" aria-label="FlowPilot screenshots">
+            <figure>
+              <img
+                src="assets/flowpilot/demo-workflow-builder.png"
+                alt="FlowPilot workflow builder showing the incident triage workflow"
+                data-i18n-alt="galleryBuilderAlt"
+              />
+              <figcaption data-i18n="galleryBuilder">Workflow builder</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/flowpilot/demo-ai-traces.png"
+                alt="FlowPilot AI traces table with provider, model, tokens, cost, and latency"
+                data-i18n-alt="galleryTracesAlt"
+              />
+              <figcaption data-i18n="galleryTraces">AI traces</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/flowpilot/demo-execution-summary.png"
+                alt="FlowPilot execution detail summary cards"
+                data-i18n-alt="galleryExecutionAlt"
+              />
+              <figcaption data-i18n="galleryExecution">Execution detail</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/flowpilot/demo-ai-node-config.png"
+                alt="FlowPilot AI prompt node configuration panel"
+                data-i18n-alt="galleryConfigAlt"
+              />
+              <figcaption data-i18n="galleryConfig">AI node config</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band work-section" id="work" aria-labelledby="work-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="workEyebrow">Selected work</p>
+            <h2 id="work-title" data-i18n="workTitle">Projects worth showing</h2>
+            <p data-i18n="workLead">
+              I picked the repositories with the clearest product shape, meaningful implementation,
+              tests, or architecture signals. The older ones stay honest about scope; the newer ones
+              show where my work is heading.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured-project">
+              <div class="project-topline">
+                <span class="project-kicker">AI · Full stack</span>
+                <span class="project-state private" data-i18n="statePrivate">Private repo</span>
+              </div>
+              <h3>DocuQuery AI</h3>
+              <p data-i18n="docuDesc">
+                Full-stack PDF question-answering app with upload, MinIO object storage, text
+                extraction, and LLM answers grounded in the selected document.
+              </p>
+              <ul>
+                <li data-i18n="docuOne">Express API and React/Vite frontend in a simple monorepo.</li>
+                <li data-i18n="docuTwo">Docker Compose runs API, web app, MinIO, and bucket bootstrap.</li>
+                <li data-i18n="docuThree">OpenRouter integration with a strict answer-from-document prompt.</li>
+              </ul>
+              <div class="tag-row" aria-label="DocuQuery stack">
+                <span>React</span><span>Vite</span><span>Express</span><span>MinIO</span><span>OpenRouter</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-kicker">Realtime web app</span>
+                <span class="project-state public" data-i18n="statePublic">Public</span>
+              </div>
+              <h3>Laravel Webchat</h3>
+              <p data-i18n="webchatDesc">
+                Private messaging app with Laravel, Inertia/React, authenticated API routes, message
+                persistence, and realtime delivery through broadcast channels.
+              </p>
+              <ul>
+                <li data-i18n="webchatOne">Jetstream/Sanctum auth foundation with typed React screens.</li>
+                <li data-i18n="webchatTwo">WebSocket event for incoming messages and per-user private channels.</li>
+                <li data-i18n="webchatThree">Conversation loading, message creation, deletion, and seeded demo data.</li>
+              </ul>
+              <a class="text-link" href="https://github.com/marcel0paixao/laravel-webchat" data-i18n="repoLink">
+                View repository
+              </a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-kicker">API + Frontend</span>
+                <span class="project-state public" data-i18n="statePublic2">Public</span>
+              </div>
+              <h3>Angular + NestJS Product CRUD</h3>
+              <p data-i18n="angularDesc">
+                Product and category management split across an Angular Material frontend and a
+                NestJS API with Prisma, JWT auth, validation, and tests.
+              </p>
+              <ul>
+                <li data-i18n="angularOne">Frontend includes auth flow, guards, interceptors, forms, tables, and dialogs.</li>
+                <li data-i18n="angularTwo">API covers users, products, categories, Passport strategies, and Prisma models.</li>
+                <li data-i18n="angularThree">Unit specs across components, services, controllers, and e2e scaffolding.</li>
+              </ul>
+              <div class="dual-links">
+                <a class="text-link" href="https://github.com/marcel0paixao/angular-product-crud" data-i18n="frontendRepo">
+                  Frontend repo
+                </a>
+                <a class="text-link" href="https://github.com/marcel0paixao/angular-crud-api" data-i18n="apiRepo">
+                  API repo
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-kicker">Laravel API</span>
+                <span class="project-state public" data-i18n="statePublic3">Public</span>
+              </div>
+              <h3>Investment Dashboard API</h3>
+              <p data-i18n="investmentDesc">
+                Laravel API foundation for an investment dashboard with Fortify/Sanctum auth,
+                role-based routes, Docker, migrations, and JSON response middleware.
+              </p>
+              <ul>
+                <li data-i18n="investmentOne">Admin and customer dashboard route groups behind Sanctum auth.</li>
+                <li data-i18n="investmentTwo">Custom login/logout responses and email validation rules.</li>
+                <li data-i18n="investmentThree">Role table, personal access tokens, queues/cache tables, and tests.</li>
+              </ul>
+              <a
+                class="text-link"
+                href="https://github.com/marcel0paixao/investment-dashboard-project-api"
+                data-i18n="repoLink2"
+              >
+                View repository
+              </a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-kicker">Mobile + backend</span>
+                <span class="project-state public" data-i18n="statePublic4">Public</span>
+              </div>
+              <h3>Conectar e Servir</h3>
+              <p data-i18n="conectarDesc">
+                TCC project pairing an Expo/React Native frontend with a Java Spring Boot backend
+                for a service-oriented mobile product.
+              </p>
+              <ul>
+                <li data-i18n="conectarOne">Expo app structure with auth context, native Android/iOS setup, and maps config.</li>
+                <li data-i18n="conectarTwo">Spring Boot backend foundation with Maven project structure.</li>
+                <li data-i18n="conectarThree">A broader product build that shows comfort outside one stack.</li>
+              </ul>
+              <a class="text-link" href="https://github.com/marcel0paixao/conectar_e_servir" data-i18n="repoLink3">
+                View repository
+              </a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-kicker">React UI</span>
+                <span class="project-state public" data-i18n="statePublic5">Public</span>
+              </div>
+              <h3>Pokemons Types</h3>
+              <p data-i18n="pokemonDesc">
+                React/Vite TypeScript app for browsing Pokémon types, pagination, routing, reusable
+                UI pieces, and focused component tests.
+              </p>
+              <ul>
+                <li data-i18n="pokemonOne">Typed models for pagination, Pokémon, and type data.</li>
+                <li data-i18n="pokemonTwo">Test coverage for cards, buttons, header, pagination, and pages.</li>
+                <li data-i18n="pokemonThree">Small project, useful as a clean front-end testing sample.</li>
+              </ul>
+              <a class="text-link" href="https://github.com/marcel0paixao/pokemons-types" data-i18n="repoLink4">
+                View repository
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band stack-section" id="stack" aria-labelledby="stack-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="stackEyebrow">How I can help</p>
+            <h2 id="stack-title" data-i18n="stackTitle">Practical full-stack engineering</h2>
+          </div>
+
+          <div class="capability-grid">
+            <article>
+              <h3 data-i18n="capBackendTitle">Backend systems</h3>
+              <p data-i18n="capBackendText">
+                NestJS, Laravel, Express, FastAPI, REST APIs, auth, RBAC, Prisma, PostgreSQL, queues,
+                jobs, and integration boundaries.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="capFrontendTitle">Product interfaces</h3>
+              <p data-i18n="capFrontendText">
+                React, Vite, Angular, Inertia, TypeScript, forms, dashboards, admin panels, workflow
+                UIs, and responsive frontends that stay usable.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="capAiTitle">AI integration</h3>
+              <p data-i18n="capAiText">
+                LLM provider abstraction, prompt nodes, OpenRouter, document Q&A, observability,
+                token/latency tracking, and room to grow into RAG and model comparison.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="capDeliveryTitle">Delivery habits</h3>
+              <p data-i18n="capDeliveryText">
+                Docker Compose, GitHub Actions, tests where they matter, readable docs, demo seeds,
+                and architecture choices that can be explained in an interview.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-inner">
+          <div>
+            <p class="eyebrow" data-i18n="contactEyebrow">Freelance and hiring</p>
+            <h2 id="contact-title" data-i18n="contactTitle">Let’s build something useful.</h2>
+            <p data-i18n="contactText">
+              I am open to freelance projects, backend-heavy full-stack work, AI-enabled product
+              prototypes, and software engineering roles. For private repo access or a code
+              walkthrough, reach me through GitHub or the platform where you found this portfolio.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://github.com/marcel0paixao" data-i18n="contactGithub">
+              GitHub profile
+            </a>
+            <a class="button button-secondary" href="#case" data-i18n="contactCase">Review FlowPilot</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p>© <span data-year></span> Marcelo da Paixão</p>
+        <p data-i18n="footerText">Built as a static GitHub Pages portfolio.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
