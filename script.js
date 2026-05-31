@@ -64,6 +64,7 @@ const translations = {
     statePublic3: "Public",
     statePublic4: "Public",
     statePublic5: "Public",
+    statePublic6: "Public",
     docuDesc:
       "Full-stack PDF question-answering app with upload, MinIO object storage, text extraction, and LLM answers grounded in the selected document.",
     docuOne: "Express API and React/Vite frontend in a simple monorepo.",
@@ -83,12 +84,6 @@ const translations = {
     angularThree: "Unit specs across components, services, controllers, and e2e scaffolding.",
     frontendRepo: "Frontend repo",
     apiRepo: "API repo",
-    investmentDesc:
-      "Laravel API foundation for an investment dashboard with Fortify/Sanctum auth, role-based routes, Docker, migrations, and JSON response middleware.",
-    investmentOne: "Admin and customer dashboard route groups behind Sanctum auth.",
-    investmentTwo: "Custom login/logout responses and email validation rules.",
-    investmentThree: "Role table, personal access tokens, queues/cache tables, and tests.",
-    repoLink2: "View repository",
     conectarDesc:
       "TCC project pairing an Expo/React Native frontend with a Java Spring Boot backend for a service-oriented mobile product.",
     conectarOne:
@@ -102,6 +97,13 @@ const translations = {
     pokemonTwo: "Test coverage for cards, buttons, header, pagination, and pages.",
     pokemonThree: "Small project, useful as a clean front-end testing sample.",
     repoLink4: "View repository",
+    loginKicker: "First full-stack project",
+    loginDesc:
+      "My first full-stack project, kept at the end as a progress marker: a simple login and CRUD system built to practice auth flows, forms, MySQL, and MVC.",
+    loginOne: "Account creation, login, profile editing, and account deletion.",
+    loginTwo: "PHP 7, MySQL, Bootstrap, Vue.js, JavaScript, HTML, and CSS.",
+    loginThree: "Custom MVC structure with routes, controllers, models, views, and PDO connection.",
+    repoLinkLogin: "View repository",
     stackEyebrow: "How I can help",
     stackTitle: "Practical full-stack engineering",
     capBackendTitle: "Backend systems",
@@ -190,6 +192,7 @@ const translations = {
     statePublic3: "Público",
     statePublic4: "Público",
     statePublic5: "Público",
+    statePublic6: "Público",
     docuDesc:
       "Aplicação full-stack para perguntas sobre PDFs, com upload, armazenamento em MinIO, extração de texto e respostas de LLM baseadas no documento selecionado.",
     docuOne: "API Express e frontend React/Vite em um monorepo simples.",
@@ -209,12 +212,6 @@ const translations = {
     angularThree: "Specs unitários em componentes, services, controllers e base e2e.",
     frontendRepo: "Repo frontend",
     apiRepo: "Repo API",
-    investmentDesc:
-      "Base de API Laravel para dashboard de investimentos com Fortify/Sanctum auth, rotas por papel, Docker, migrations e middleware de resposta JSON.",
-    investmentOne: "Grupos de rotas admin e customer atrás de autenticação Sanctum.",
-    investmentTwo: "Respostas customizadas de login/logout e regras de validação de email.",
-    investmentThree: "Tabela de roles, personal access tokens, filas/cache e testes.",
-    repoLink2: "Ver repositório",
     conectarDesc:
       "Projeto de TCC juntando frontend Expo/React Native e backend Java Spring Boot para um produto mobile orientado a serviços.",
     conectarOne:
@@ -228,6 +225,13 @@ const translations = {
     pokemonTwo: "Testes cobrindo cards, botões, header, paginação e páginas.",
     pokemonThree: "Projeto menor, útil como amostra limpa de testes no front-end.",
     repoLink4: "Ver repositório",
+    loginKicker: "Primeiro projeto full-stack",
+    loginDesc:
+      "Meu primeiro projeto full-stack, mantido no final como marco de evolução: um sistema simples de login e CRUD feito para praticar fluxos de auth, formulários, MySQL e MVC.",
+    loginOne: "Criação de conta, login, edição de perfil e exclusão de conta.",
+    loginTwo: "PHP 7, MySQL, Bootstrap, Vue.js, JavaScript, HTML e CSS.",
+    loginThree: "Estrutura MVC própria com rotas, controllers, models, views e conexão PDO.",
+    repoLinkLogin: "Ver repositório",
     stackEyebrow: "Como posso ajudar",
     stackTitle: "Engenharia full-stack prática",
     capBackendTitle: "Sistemas backend",
