@@ -58,7 +58,7 @@ const translations = {
     workTitle: "Projects worth showing",
     workLead:
       "I picked the repositories with the clearest product shape, meaningful implementation, tests, or architecture signals. The older ones stay honest about scope; the newer ones show where my work is heading.",
-    statePrivate: "Private repo",
+    stateDocu: "Public",
     statePublic: "Public",
     statePublic2: "Public",
     statePublic3: "Public",
@@ -69,6 +69,7 @@ const translations = {
     docuOne: "Express API and React/Vite frontend in a simple monorepo.",
     docuTwo: "Docker Compose runs API, web app, MinIO, and bucket bootstrap.",
     docuThree: "OpenRouter integration with a strict answer-from-document prompt.",
+    repoLinkDocu: "View repository",
     webchatDesc:
       "Private messaging app with Laravel, Inertia/React, authenticated API routes, message persistence, and realtime delivery through broadcast channels.",
     webchatOne: "Jetstream/Sanctum auth foundation with typed React screens.",
@@ -118,9 +119,10 @@ const translations = {
     contactEyebrow: "Freelance and hiring",
     contactTitle: "Let’s build something useful.",
     contactText:
-      "I am open to freelance projects, backend-heavy full-stack work, AI-enabled product prototypes, and software engineering roles. For private repo access or a code walkthrough, reach me through GitHub or the platform where you found this portfolio.",
-    contactGithub: "GitHub profile",
-    contactCase: "Review FlowPilot",
+      "I am open to freelance projects, backend-heavy full-stack work, AI-enabled product prototypes, and software engineering roles. Email is the fastest route; LinkedIn is best for recruiting conversations and longer context.",
+    contactEmail: "Email me",
+    contactLinkedin: "LinkedIn",
+    contactGithub: "GitHub",
     footerText: "Built as a static GitHub Pages portfolio.",
   },
   pt: {
@@ -182,7 +184,7 @@ const translations = {
     workTitle: "Projetos que valem mostrar",
     workLead:
       "Escolhi os repositórios com forma de produto mais clara, implementação relevante, testes ou bons sinais de arquitetura. Os mais antigos ficam honestos sobre escopo; os mais novos mostram para onde meu trabalho está indo.",
-    statePrivate: "Repo privado",
+    stateDocu: "Público",
     statePublic: "Público",
     statePublic2: "Público",
     statePublic3: "Público",
@@ -193,6 +195,7 @@ const translations = {
     docuOne: "API Express e frontend React/Vite em um monorepo simples.",
     docuTwo: "Docker Compose sobe API, web app, MinIO e bootstrap do bucket.",
     docuThree: "Integração com OpenRouter usando prompt restrito ao conteúdo do documento.",
+    repoLinkDocu: "Ver repositório",
     webchatDesc:
       "App de mensagens privadas com Laravel, Inertia/React, rotas autenticadas, persistência de mensagens e entrega em tempo real via broadcast channels.",
     webchatOne: "Base de autenticação com Jetstream/Sanctum e telas React tipadas.",
@@ -242,9 +245,10 @@ const translations = {
     contactEyebrow: "Freela e contratação",
     contactTitle: "Vamos construir algo útil.",
     contactText:
-      "Estou aberto para freelas, trabalho full-stack com peso em backend, protótipos de produto com IA e vagas de engenharia de software. Para acesso a repositórios privados ou walkthrough de código, me chame pelo GitHub ou pela plataforma onde você encontrou este portfólio.",
-    contactGithub: "Perfil no GitHub",
-    contactCase: "Rever FlowPilot",
+      "Estou aberto para freelas, trabalho full-stack com peso em backend, protótipos de produto com IA e vagas de engenharia de software. Email é o caminho mais direto; LinkedIn funciona melhor para recrutamento e conversas com mais contexto.",
+    contactEmail: "Enviar email",
+    contactLinkedin: "LinkedIn",
+    contactGithub: "GitHub",
     footerText: "Criado como portfólio estático no GitHub Pages.",
   },
 };
