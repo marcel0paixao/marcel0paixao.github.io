@@ -58,9 +58,6 @@ const translations = {
     workTitle: "Projects worth showing",
     workLead:
       "Public repositories and sanitized private client work with the clearest product shape, meaningful implementation, tests, data work, or architecture signals.",
-    privateWorkNoteTitle: "Private client work, summarized responsibly",
-    privateWorkNoteText:
-      "These cards describe projects I worked on at CodesenseBR without publishing source code, credentials, customer data, screenshots, or proprietary implementation details.",
     stateDocu: "Public",
     statePrivate: "Private",
     statePublic: "Public",
@@ -221,9 +218,6 @@ const translations = {
     workTitle: "Projetos que valem mostrar",
     workLead:
       "Repositórios públicos e trabalhos privados resumidos de forma segura, com melhor forma de produto, implementação relevante, testes, dados ou sinais de arquitetura.",
-    privateWorkNoteTitle: "Projetos privados, resumidos com responsabilidade",
-    privateWorkNoteText:
-      "Estes cards descrevem projetos em que trabalhei na CodesenseBR sem publicar código-fonte, credenciais, dados de clientes, screenshots ou detalhes proprietários de implementação.",
     stateDocu: "Público",
     statePrivate: "Privado",
     statePublic: "Público",

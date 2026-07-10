@@ -545,25 +545,6 @@ figcaption {
   font-weight: 730;
 }
 
-.private-work-note {
-  max-width: 880px;
-  margin: 0 0 18px;
-  padding: 14px 16px;
-  border-left: 3px solid var(--coral);
-  background: rgba(240, 121, 97, 0.08);
-}
-
-.private-work-note strong {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--text);
-}
-
-.private-work-note p {
-  margin: 0;
-  color: var(--muted);
-}
-
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
