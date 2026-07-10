@@ -57,14 +57,49 @@ const translations = {
     workEyebrow: "Selected work",
     workTitle: "Projects worth showing",
     workLead:
-      "I picked the repositories with the clearest product shape, meaningful implementation, tests, or architecture signals. The older ones stay honest about scope; the newer ones show where my work is heading.",
+      "Public repositories and sanitized private client work with the clearest product shape, meaningful implementation, tests, data work, or architecture signals.",
+    privateWorkNoteTitle: "Private client work, summarized responsibly",
+    privateWorkNoteText:
+      "These cards describe projects I worked on at CodesenseBR without publishing source code, credentials, customer data, screenshots, or proprietary implementation details.",
     stateDocu: "Public",
+    statePrivate: "Private",
     statePublic: "Public",
     statePublic2: "Public",
     statePublic3: "Public",
     statePublic4: "Public",
     statePublic5: "Public",
     statePublic6: "Public",
+    privateNoRepo: "No public repository. Public summary only.",
+    festivoteKicker: "Client work · Event tech",
+    festivoteTitle: "Festival Voting & Analytics Platform",
+    festivoteDesc:
+      "Private end-to-end voting platform for festivals, covering QR/hash access, ticket validation, configurable ballots, staff/admin operations, imports, exports, PDFs, result dashboards, scores, ratings, and voter leaderboards.",
+    festivoteOne:
+      "Worked across the voting engine, role-based admin/staff flows, poll configuration, ticket access, and post-vote states.",
+    festivoteTwo:
+      "Handled complex MySQL/MariaDB views for result computation, JSON aggregation, Bayesian ratings, score pipelines, and leaderboards.",
+    festivoteThree:
+      "Organized dashboard/export data, improved query safety, and mapped performance/indexing risks around high-traffic festival voting flows.",
+    trabalistaKicker: "Client work · Marketplace",
+    trabalistaTitle: "Services Marketplace Platform",
+    trabalistaDesc:
+      "Private services marketplace where I had near end-to-end ownership across backend, frontend, product flows, maintenance, and production-facing fixes.",
+    trabalistaOne:
+      "Owned large parts of onboarding, listings, search/filtering, profiles, account lifecycle, and admin/moderation screens.",
+    trabalistaTwo:
+      "Built and maintained realtime/product interaction flows: chat, message previews, notifications, favorites, blocking, reports, reviews, and deletion jobs.",
+    trabalistaThree:
+      "Worked through messy production concerns: authorization fixes, field contracts, queue/Horizon jobs, image processing, integrations, SQL tuning, and debugging.",
+    lvdKicker: "Client work · API",
+    lvdTitle: "Environmental Inventory Data Platform",
+    lvdDesc:
+      "Private environmental inventory backend where the hardest part was untangling a dense relational domain: organizations, contacts, addresses, agricultural activities, parameters, values, fuels, emission factors, and GWP references.",
+    lvdOne:
+      "Reverse-engineered and organized deep SQLAlchemy/Alembic relationships, including one-to-one, many-to-many, seeds, dumps, and migration history.",
+    lvdTwo:
+      "Worked on FastAPI auth/user flows, JWT/token persistence, PostgreSQL setup, Docker Compose, and front-facing API data contracts.",
+    lvdThree:
+      "Audited brittle migrations, ORM backrefs, test drift, CORS/JWT risks, SQL/data consistency, and deployment healthcheck mismatches.",
     docuDesc:
       "Full-stack PDF question-answering app with upload, MinIO object storage, text extraction, and LLM answers grounded in the selected document.",
     docuOne: "Express API and React/Vite frontend in a simple monorepo.",
@@ -185,14 +220,49 @@ const translations = {
     workEyebrow: "Projetos selecionados",
     workTitle: "Projetos que valem mostrar",
     workLead:
-      "Escolhi os repositórios com forma de produto mais clara, implementação relevante, testes ou bons sinais de arquitetura. Os mais antigos ficam honestos sobre escopo; os mais novos mostram para onde meu trabalho está indo.",
+      "Repositórios públicos e trabalhos privados resumidos de forma segura, com melhor forma de produto, implementação relevante, testes, dados ou sinais de arquitetura.",
+    privateWorkNoteTitle: "Projetos privados, resumidos com responsabilidade",
+    privateWorkNoteText:
+      "Estes cards descrevem projetos em que trabalhei na CodesenseBR sem publicar código-fonte, credenciais, dados de clientes, screenshots ou detalhes proprietários de implementação.",
     stateDocu: "Público",
+    statePrivate: "Privado",
     statePublic: "Público",
     statePublic2: "Público",
     statePublic3: "Público",
     statePublic4: "Público",
     statePublic5: "Público",
     statePublic6: "Público",
+    privateNoRepo: "Sem repositório público. Apenas resumo público.",
+    festivoteKicker: "Cliente privado · Eventos",
+    festivoteTitle: "Plataforma de Votação e Analytics para Festivais",
+    festivoteDesc:
+      "Plataforma privada ponta a ponta para votação em festivais, cobrindo acesso por QR/hash, validação de tickets, cédulas configuráveis, operação staff/admin, importações, exportações, PDFs, dashboards, scores, ratings e leaderboards.",
+    festivoteOne:
+      "Atuação no motor de votação, fluxos admin/staff por papel, configuração de votação, acesso por tickets e estados pós-voto.",
+    festivoteTwo:
+      "Trabalho com views MySQL/MariaDB complexas para cálculo de resultados, agregações JSON, ratings bayesianos, pipelines de score e leaderboards.",
+    festivoteThree:
+      "Organização de dados para dashboards/exportações, melhoria de segurança em queries e mapeamento de riscos de performance/índices em fluxo de votação de alto uso.",
+    trabalistaKicker: "Cliente privado · Marketplace",
+    trabalistaTitle: "Plataforma de Marketplace de Serviços",
+    trabalistaDesc:
+      "Marketplace privado de serviços em que tive ownership quase ponta a ponta em backend, frontend, fluxos de produto, manutenção e correções com impacto operacional.",
+    trabalistaOne:
+      "Ownership de boa parte de onboarding, anúncios, busca/filtros, perfis, ciclo de conta e telas admin/moderação.",
+    trabalistaTwo:
+      "Construção e manutenção de fluxos de interação em tempo real/produto: chat, previews de mensagem, notificações, favoritos, bloqueios, denúncias, avaliações e jobs de exclusão.",
+    trabalistaThree:
+      "Atuação em problemas reais de produção: autorização, contratos de campos, filas/Horizon, processamento de imagens, integrações, tuning SQL e debugging.",
+    lvdKicker: "Cliente privado · API",
+    lvdTitle: "Plataforma de Dados para Inventário Ambiental",
+    lvdDesc:
+      "Backend privado de inventário ambiental em que a parte mais pesada foi destrinchar um domínio relacional denso: organizações, contatos, endereços, atividades agrícolas, parâmetros, valores, combustíveis, fatores de emissão e referências GWP.",
+    lvdOne:
+      "Engenharia reversa e organização de relações profundas em SQLAlchemy/Alembic, incluindo one-to-one, many-to-many, seeds, dumps e histórico de migrations.",
+    lvdTwo:
+      "Atuação em auth/usuário com FastAPI, JWT, persistência de tokens, setup PostgreSQL, Docker Compose e contratos de dados consumíveis pelo front.",
+    lvdThree:
+      "Auditoria de migrations frágeis, backrefs ORM, drift de testes, riscos de CORS/JWT, consistência SQL/dados e divergências de healthcheck no deploy.",
     docuDesc:
       "Aplicação full-stack para perguntas sobre PDFs, com upload, armazenamento em MinIO, extração de texto e respostas de LLM baseadas no documento selecionado.",
     docuOne: "API Express e frontend React/Vite em um monorepo simples.",

@@ -545,6 +545,25 @@ figcaption {
   font-weight: 730;
 }
 
+.private-work-note {
+  max-width: 880px;
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--coral);
+  background: rgba(240, 121, 97, 0.08);
+}
+
+.private-work-note strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.private-work-note p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -561,6 +580,10 @@ figcaption {
 
 .featured-project {
   background: linear-gradient(180deg, rgba(72, 191, 174, 0.15) 0%, var(--surface) 72%);
+}
+
+.private-client-project {
+  background: linear-gradient(180deg, rgba(240, 121, 97, 0.1) 0%, var(--surface) 66%);
 }
 
 .project-topline {
@@ -632,6 +655,13 @@ figcaption {
   padding: 3px 9px;
   background: var(--mint);
   color: var(--teal-dark);
+}
+
+.private-note {
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.84rem;
 }
 
 .text-link {

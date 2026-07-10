@@ -79,7 +79,7 @@
             </div>
             <div>
               <dt data-i18n="proofProjectsLabel">Selected projects</dt>
-              <dd>7</dd>
+              <dd>10</dd>
             </div>
             <div>
               <dt data-i18n="proofFocusLabel">Focus</dt>
@@ -228,13 +228,85 @@
             <p class="eyebrow" data-i18n="workEyebrow">Selected work</p>
             <h2 id="work-title" data-i18n="workTitle">Projects worth showing</h2>
             <p data-i18n="workLead">
-              I picked the repositories with the clearest product shape, meaningful implementation,
-              tests, or architecture signals. The older ones stay honest about scope; the newer ones
-              show where my work is heading.
+              Public repositories and sanitized private client work with the clearest product shape,
+              meaningful implementation, tests, data work, or architecture signals.
+            </p>
+          </div>
+
+          <div class="private-work-note">
+            <strong data-i18n="privateWorkNoteTitle">Private client work, summarized responsibly</strong>
+            <p data-i18n="privateWorkNoteText">
+              These cards describe projects I worked on at CodesenseBR without publishing source code,
+              credentials, customer data, screenshots, or proprietary implementation details.
             </p>
           </div>
 
           <div class="project-grid">
+            <article class="project-card private-client-project featured-project">
+              <div class="project-topline">
+                <span class="project-kicker" data-i18n="festivoteKicker">Client work · Event tech</span>
+                <span class="project-state private" data-i18n="statePrivate">Private</span>
+              </div>
+              <h3 data-i18n="festivoteTitle">Festival Voting & Analytics Platform</h3>
+              <p data-i18n="festivoteDesc">
+                Private end-to-end voting platform for festivals, covering QR/hash access, ticket
+                validation, configurable ballots, staff/admin operations, imports, exports, PDFs,
+                result dashboards, scores, ratings, and voter leaderboards.
+              </p>
+              <ul>
+                <li data-i18n="festivoteOne">Worked across the voting engine, role-based admin/staff flows, poll configuration, ticket access, and post-vote states.</li>
+                <li data-i18n="festivoteTwo">Handled complex MySQL/MariaDB views for result computation, JSON aggregation, Bayesian ratings, score pipelines, and leaderboards.</li>
+                <li data-i18n="festivoteThree">Organized dashboard/export data, improved query safety, and mapped performance/indexing risks around high-traffic festival voting flows.</li>
+              </ul>
+              <div class="tag-row" aria-label="Festival voting platform stack">
+                <span>Laravel</span><span>Livewire</span><span>Vue</span><span>MySQL</span><span>SQL Views</span>
+              </div>
+              <p class="private-note" data-i18n="privateNoRepo">No public repository. Public summary only.</p>
+            </article>
+
+            <article class="project-card private-client-project">
+              <div class="project-topline">
+                <span class="project-kicker" data-i18n="trabalistaKicker">Client work · Marketplace</span>
+                <span class="project-state private" data-i18n="statePrivate">Private</span>
+              </div>
+              <h3 data-i18n="trabalistaTitle">Services Marketplace Platform</h3>
+              <p data-i18n="trabalistaDesc">
+                Private services marketplace where I had near end-to-end ownership across backend,
+                frontend, product flows, maintenance, and production-facing fixes.
+              </p>
+              <ul>
+                <li data-i18n="trabalistaOne">Owned large parts of onboarding, listings, search/filtering, profiles, account lifecycle, and admin/moderation screens.</li>
+                <li data-i18n="trabalistaTwo">Built and maintained realtime/product interaction flows: chat, message previews, notifications, favorites, blocking, reports, reviews, and deletion jobs.</li>
+                <li data-i18n="trabalistaThree">Worked through messy production concerns: authorization fixes, field contracts, queue/Horizon jobs, image processing, integrations, SQL tuning, and debugging.</li>
+              </ul>
+              <div class="tag-row" aria-label="Services marketplace platform stack">
+                <span>Laravel</span><span>React</span><span>TypeScript</span><span>Redis</span><span>WebSockets</span>
+              </div>
+              <p class="private-note" data-i18n="privateNoRepo">No public repository. Public summary only.</p>
+            </article>
+
+            <article class="project-card private-client-project">
+              <div class="project-topline">
+                <span class="project-kicker" data-i18n="lvdKicker">Client work · API</span>
+                <span class="project-state private" data-i18n="statePrivate">Private</span>
+              </div>
+              <h3 data-i18n="lvdTitle">Environmental Inventory Data Platform</h3>
+              <p data-i18n="lvdDesc">
+                Private environmental inventory backend where the hardest part was untangling a
+                dense relational domain: organizations, contacts, addresses, agricultural activities,
+                parameters, values, fuels, emission factors, and GWP references.
+              </p>
+              <ul>
+                <li data-i18n="lvdOne">Reverse-engineered and organized deep SQLAlchemy/Alembic relationships, including one-to-one, many-to-many, seeds, dumps, and migration history.</li>
+                <li data-i18n="lvdTwo">Worked on FastAPI auth/user flows, JWT/token persistence, PostgreSQL setup, Docker Compose, and front-facing API data contracts.</li>
+                <li data-i18n="lvdThree">Audited brittle migrations, ORM backrefs, test drift, CORS/JWT risks, SQL/data consistency, and deployment healthcheck mismatches.</li>
+              </ul>
+              <div class="tag-row" aria-label="Environmental inventory API stack">
+                <span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Alembic</span>
+              </div>
+              <p class="private-note" data-i18n="privateNoRepo">No public repository. Public summary only.</p>
+            </article>
+
             <article class="project-card featured-project">
               <div class="project-topline">
                 <span class="project-kicker">AI · Full stack</span>
